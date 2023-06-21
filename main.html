@@ -5,13 +5,13 @@
 </head>
 <body>
 	<h2>Feedback Form</h2>
-	<form method="post">
+	<form action = "/submit" method="post">
 		<label for="name">Name</label>
 		<input minlength="3" maxlength="50" required id="name" type="text" name="name">
-
+		<br><br>
 		<label for="portfolio">Webpage:</label>
 		<input type="url" id="portfolio" name="portfolio" required>
-
+		<br><br>
 		<label for="favColor">Favourite Color</label>
 		<select id="favColor" name="favColor" required>
 			<option value="">Select a Color</option>
@@ -23,7 +23,7 @@
 			<option value="indigo">Indigo</option>
 			<option value="violet">Violet</option>
 		</select>
-
+		<br><br>
 		<label for="likeness">Likeness</label>
 		<input type="range" min="1" max="100" id="likeness" name="likeness" required>
 
